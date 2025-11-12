@@ -1,0 +1,25 @@
+21:50:05 **** Incremental Build of configuration Debug for project mem_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+21:51:14 **** Incremental Build of configuration Debug for project mem_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+21:53:40 **** Incremental Build of configuration Debug for project mem_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+21:56:14 **** Incremental Build of configuration Debug for project mem_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+21:58:06 **** Incremental Build of configuration Debug for project mem_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
