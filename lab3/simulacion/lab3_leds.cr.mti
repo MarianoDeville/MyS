@@ -1,0 +1,18 @@
+E:/Facultad/MyS/lab3/fuentes/lab3_user_logic.vhd {1 {vcom -work work -2002 -explicit E:/Facultad/MyS/lab3/fuentes/lab3_user_logic.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity lab3_user_logic
+-- Compiling architecture lab3_user_logic_tb of lab3_user_logic
+
+} {} {}} E:/Facultad/MyS/lab3/fuentes/lab3_user_logic_tb.vhd {1 {vcom -work work -2002 -explicit {E:\Facultad\MyS\lab3\fuentes\lab3_user_logic_tb.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity lab3_user_logic_tb
+-- Compiling architecture lab3_user_logic_tb_arq of lab3_user_logic_tb
+-- Loading entity lab3_user_logic
+
+} {} {}}
