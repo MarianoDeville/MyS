@@ -5,7 +5,7 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 
-entity lab3_user_logic is
+entity lab3 is
 	generic(
 		LED_WIDTH: natural := 8	
 	);
@@ -17,9 +17,9 @@ entity lab3_user_logic is
 		S_AXI_ARESETN: in std_logic;
 		LED: out std_logic_vector(LED_WIDTH-1 downto 0)
 	);
-end entity lab3_user_logic;
+end entity lab3;
 
-architecture lab3_user_logic_tb of lab3_user_logic is
+architecture lab3_arq of lab3 is
 begin
 
 	process(S_AXI_ACLK)
@@ -33,4 +33,4 @@ begin
 		end if;
 	end process;
 
-end architecture lab3_user_logic_tb;
+end architecture lab3_arq;

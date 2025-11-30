@@ -1,10 +1,10 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 
-entity lab3_user_logic_tb is
+entity lab3_tb is
 end;
 
-architecture lab3_user_logic_tb_arq of lab3_user_logic_tb is
+architecture lab3_tb_arq of lab3_tb is
 
 	constant LED_WIDTH_tb:   natural := 8;
 		
@@ -19,7 +19,7 @@ begin
 	S_AXI_ACLK_tb <= not S_AXI_ACLK_tb after 10 ns;
 	--rst_tb <= '0' after 40 ns;
 
-	lab3_user_logic_inst: entity work.lab3_user_logic
+	lab3_inst: entity work.lab3
 		generic map(
 			LED_WIDTH => LED_WIDTH_tb
 		)

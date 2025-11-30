@@ -1,0 +1,30 @@
+E:/Facultad/MyS/contNb_top/fuentes/contNb_top.vhd {1 {vcom -work work -2002 -explicit E:/Facultad/MyS/contNb_top/fuentes/contNb_top.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity contNb_top
+-- Compiling architecture contNb_top_arq of contNb_top
+-- Loading package NUMERIC_STD
+-- Loading entity genEnaNb
+-- Loading entity contNb
+
+} {} {}} E:/Facultad/MyS/genEnaNb/fuentes/genEnaNb.vhd {1 {vcom -work work -2002 -explicit E:/Facultad/MyS/genEnaNb/fuentes/genEnaNb.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity genEnaNb
+-- Compiling architecture genEnaNb_arq of genEnaNb
+
+} {} {}} E:/Facultad/MyS/contNb_top/fuentes/contNb_top_tb.vhd {1 {vcom -work work -2002 -explicit E:/Facultad/MyS/contNb_top/fuentes/contNb_top_tb.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity contNb_top_tb
+-- Compiling architecture contNb_top_tb_arq of contNb_top_tb
+-- Loading entity contNb_top
+
+} {} {}}

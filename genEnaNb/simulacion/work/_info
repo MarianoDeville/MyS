@@ -1,0 +1,79 @@
+m255
+K3
+13
+cModel Technology
+dC:\altera\13.1
+Egenenanb
+Z0 w1764359969
+Z1 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dE:\Facultad\MyS\genEnaNb\simulacion
+Z5 8E:/Facultad/MyS/genEnaNb/fuentes/genEnaNb.vhd
+Z6 FE:/Facultad/MyS/genEnaNb/fuentes/genEnaNb.vhd
+l0
+L12
+Vi2S=aGHoHEXIcT<Tz?n4i2
+Z7 OV;C;10.1d;51
+32
+Z8 !s108 1764360018.501000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Facultad/MyS/genEnaNb/fuentes/genEnaNb.vhd|
+Z10 !s107 E:/Facultad/MyS/genEnaNb/fuentes/genEnaNb.vhd|
+Z11 o-work work -2002 -explicit -O0
+Z12 tExplicit 1
+!s100 d0QEc?;6j[o`UlD?NBTlG3
+!i10b 1
+Agenenanb_arq
+R1
+R2
+R3
+Z13 DEx4 work 8 genenanb 0 22 i2S=aGHoHEXIcT<Tz?n4i2
+l35
+L29
+VR83h3Xek]=`^d7KA>[8YW2
+!s100 VTKfQ[67mISi_7fQK[ICl1
+R7
+32
+R8
+R9
+R10
+R11
+R12
+!i10b 1
+Egenenanb_tb
+Z14 w1764359855
+R2
+R3
+R4
+Z15 8E:/Facultad/MyS/genEnaNb/fuentes/genEnaNb_tb.vhd
+Z16 FE:/Facultad/MyS/genEnaNb/fuentes/genEnaNb_tb.vhd
+l0
+L10
+VJeKn333cL9@b_?S03bUPh0
+!s100 Lg<lnEh_KW2MzTB[=@6AL3
+R7
+32
+!i10b 1
+Z17 !s108 1764360018.533000
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Facultad/MyS/genEnaNb/fuentes/genEnaNb_tb.vhd|
+Z19 !s107 E:/Facultad/MyS/genEnaNb/fuentes/genEnaNb_tb.vhd|
+R11
+R12
+Agenenanb_tb_arq
+R1
+R13
+R2
+R3
+Z20 DEx4 work 11 genenanb_tb 0 22 JeKn333cL9@b_?S03bUPh0
+l26
+L14
+Z21 V5dhOzU@9SPS8HfFVi28263
+Z22 !s100 53:0QE5coRW7CBFO[]Wam1
+R7
+32
+!i10b 1
+R17
+R18
+R19
+R11
+R12

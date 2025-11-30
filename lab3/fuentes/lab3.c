@@ -1,6 +1,6 @@
 #include "xparameters.h"
 #include "xgpio.h"
- 
+#include "led_ip.h"
 
 //====================================================
 
@@ -18,9 +18,6 @@ int main (void)
 	XGpio_Initialize(&push, XPAR_BUTTONS_DEVICE_ID);
 	XGpio_SetDataDirection(&push, 1, 0xffffffff);
 	
-	XGpio_Initialize(&led, XPAR_LEDS_DEVICE_ID);
-	XGpio_SetDataDirection(&led, 1, 0x00000000);
-
 
 	while (1)
 	{
@@ -30,7 +27,7 @@ int main (void)
 	  dip_check = XGpio_DiscreteRead(&dip, 1);
 	  xil_printf("DIP Switch Status %x\r\n", dip_check);
 	  
-	  XGpio_DiscreteWrite(&led, 1, psb_check);
+	  LED_IP_mWriteReg(XPAR_LED_IP_0_S00_AXI_BASEADDR, 0, ((psb_check << 4) | dip_check));
 
 	  sleep(1);
 	}

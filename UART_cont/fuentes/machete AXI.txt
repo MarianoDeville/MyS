@@ -1,0 +1,41 @@
+N: natural := 32;
+desborde_o: out std_logic;
+
+
+component contNb_top is
+	generic(
+		N: 				natural := 32
+	);
+	port(
+		clk_i:			in std_logic;						-- Entrada de Clock
+		ena_i:			in std_logic;						-- Entrada de habilitación
+		set_clk_i:		in std_logic;						-- Entrada de seteo de la configuración del genEna		
+		set_cont_i:		in std_logic;						-- Entrada señal para tomar configuración del offset		
+		rst_i:	 		in std_logic;						-- Entrada de reset - sincronizado con el clock
+		up_i:			in std_logic;						-- Entrada señal que define sentido de la cuenta
+		clr_i:			in std_logic;						-- Entrada para limpiar señal de desborde
+		word_i: 		in std_logic_vector(N-1 downto 0);	-- Palabra de configuración N bits
+		
+		desborde_o: 	out std_logic;						-- Señal de salida de desborde
+		data_o: 		out std_logic_vector(N-1 downto 0)	-- Salida del contador, palabra de salida N bits
+	);
+    end component contNb_top;
+
+
+    contNb_top_inst: contNb_top
+	generic map(
+		N => N
+	)
+	port map(
+		clk_i      => S_AXI_ACLK,
+		rst_i      => S_AXI_ARESETN,
+		ena_i      => slv_reg0(0),
+		set_clk_i  => slv_reg0(1),		
+		set_cont_i => slv_reg0(2),		
+		up_i       => slv_reg0(4),
+		clr_i      => slv_reg0(5),
+		word_i     => slv_reg1,
+		
+		desborde_o => desborde_o,
+		data_o     => slv_reg2
+	);
