@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sun Nov 30 17:10:26 2025
-# Process ID: 8552
+# Start of session at: Mon Dec  1 03:48:06 2025
+# Process ID: 5576
 # Current directory: E:/Facultad/MyS/UART_cont/sistesis/contador_configurable_UART.runs/synth_1
 # Command line: vivado.exe -log sistema_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sistema_wrapper.tcl
 # Log file: E:/Facultad/MyS/UART_cont/sistesis/contador_configurable_UART.runs/synth_1/sistema_wrapper.vds

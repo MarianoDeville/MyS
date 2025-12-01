@@ -1,6 +1,8 @@
-verilog xil_defaultlib --include "../../../../contador_configurable_UART.srcs/sources_1/bd/sistema/ipshared/ec67/hdl" --include "../../../../contador_configurable_UART.srcs/sources_1/bd/sistema/ipshared/70cf/hdl" --include "../../../../contador_configurable_UART.srcs/sources_1/bd/sistema/ip/sistema_processing_system7_0_0" --include "../../../../contador_configurable_UART.srcs/sources_1/bd/sistema/ipshared/1b7e/hdl/verilog" --include "../../../../contador_configurable_UART.srcs/sources_1/bd/sistema/ipshared/122e/hdl/verilog" --include "../../../../contador_configurable_UART.srcs/sources_1/bd/sistema/ipshared/46fd/hdl" \
+verilog xil_defaultlib --include "../../../../contador_configurable_UART.srcs/sources_1/bd/sistema/ipshared/ec67/hdl" --include "../../../../contador_configurable_UART.srcs/sources_1/bd/sistema/ipshared/70cf/hdl" --include "../../../../contador_configurable_UART.srcs/sources_1/bd/sistema/ip/sistema_processing_system7_0_0" --include "../../../../contador_configurable_UART.srcs/sources_1/bd/sistema/ipshared/1b7e/hdl/verilog" --include "../../../../contador_configurable_UART.srcs/sources_1/bd/sistema/ipshared/122e/hdl/verilog" --include "../../../../contador_configurable_UART.srcs/sources_1/bd/sistema/ipshared/46fd/hdl" --include "../../../../contador_configurable_UART.srcs/sources_1/bd/sistema/ipshared/85a3" \
 "../../../bd/sistema/ip/sistema_processing_system7_0_0/sim/sistema_processing_system7_0_0.v" \
 "../../../bd/sistema/ip/sistema_auto_pc_0/sim/sistema_auto_pc_0.v" \
+"../../../bd/sistema/ip/sistema_clk_wiz_1/sistema_clk_wiz_1_clk_wiz.v" \
+"../../../bd/sistema/ip/sistema_clk_wiz_1/sistema_clk_wiz_1.v" \
 
 verilog xil_defaultlib "glbl.v"
 

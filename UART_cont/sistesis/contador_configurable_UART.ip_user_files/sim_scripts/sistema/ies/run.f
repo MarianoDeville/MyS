@@ -37,6 +37,13 @@
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/sistema/ip/sistema_rst_ps7_0_100M_0/sim/sistema_rst_ps7_0_100M_0.vhd" \
   "../../../bd/sistema/ip/sistema_vio_0_0/sim/sistema_vio_0_0.vhd" \
+  "../../../bd/sistema/ipshared/d24b/src/contNb.vhd" \
+  "../../../bd/sistema/ipshared/d24b/src/genEnaNb.vhd" \
+  "../../../bd/sistema/ipshared/d24b/src/contNb_top.vhd" \
+  "../../../bd/sistema/ipshared/d24b/hdl/cont_config_v1_0_S00_AXI.vhd" \
+  "../../../bd/sistema/ipshared/d24b/hdl/cont_config_v1_0.vhd" \
+  "../../../bd/sistema/ip/sistema_cont_config_0_1/sim/sistema_cont_config_0_1.vhd" \
+  "../../../bd/sistema/sim/sistema.vhd" \
 -endlib
 -makelib ies_lib/generic_baseblocks_v2_1_0 \
   "../../../../contador_configurable_UART.srcs/sources_1/bd/sistema/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v" \
@@ -61,15 +68,8 @@
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/sistema/ip/sistema_auto_pc_0/sim/sistema_auto_pc_0.v" \
--endlib
--makelib ies_lib/xil_defaultlib \
-  "../../../bd/sistema/ipshared/d24b/src/contNb.vhd" \
-  "../../../bd/sistema/ipshared/d24b/src/genEnaNb.vhd" \
-  "../../../bd/sistema/ipshared/d24b/src/contNb_top.vhd" \
-  "../../../bd/sistema/ipshared/d24b/hdl/cont_config_v1_0_S00_AXI.vhd" \
-  "../../../bd/sistema/ipshared/d24b/hdl/cont_config_v1_0.vhd" \
-  "../../../bd/sistema/ip/sistema_cont_config_0_1/sim/sistema_cont_config_0_1.vhd" \
-  "../../../bd/sistema/sim/sistema.vhd" \
+  "../../../bd/sistema/ip/sistema_clk_wiz_1/sistema_clk_wiz_1_clk_wiz.v" \
+  "../../../bd/sistema/ip/sistema_clk_wiz_1/sistema_clk_wiz_1.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
   glbl.v

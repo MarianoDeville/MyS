@@ -4,7 +4,7 @@
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.        -->
 
 <hwsession version="1" minor="2">
-  <device name="xc7z010_1" gui_info=""/>
+  <device name="xc7z010_1_1" gui_info="dashboard1=hw_vios[xc7z010_1_1/hw_vio_1=VIO_PROBES_1;]"/>
   <ObjectList object_type="hw_device" gui_info="">
     <Object name="xc7z010_1" gui_info="">
       <Properties Property="FULL_PROBES.FILE" value="$_project_name_.runs/impl_1/sistema_wrapper.ltx"/>
@@ -12,6 +12,81 @@
       <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/sistema_wrapper.bit"/>
       <Properties Property="SLR.COUNT" value="1"/>
     </Object>
+    <Object name="xc7z010_1_1" gui_info="">
+      <Properties Property="FULL_PROBES.FILE" value="$_project_name_.runs/impl_1/sistema_wrapper.ltx"/>
+      <Properties Property="PROBES.FILE" value="$_project_name_.runs/impl_1/sistema_wrapper.ltx"/>
+      <Properties Property="PROGRAM.HW_BITSTREAM" value="$_project_name_.runs/impl_1/sistema_wrapper.bit"/>
+      <Properties Property="SLR.COUNT" value="1"/>
+    </Object>
   </ObjectList>
-  <probeset name="hw project" active="false"/>
+  <ObjectList object_type="hw_probe" gui_info="">
+    <Object name="sistema_i/cont_config_0_cont_o[31:0]" gui_info="hw_vios/hw_vio_1=0"/>
+    <Object name="sistema_i/cont_config_0_desborde_o" gui_info="hw_vios/hw_vio_1=1"/>
+  </ObjectList>
+  <ObjectList object_type="hw_vio" gui_info="">
+    <Object name="hw_vio_1" gui_info="hw_vios/hw_vio_1/TablePreference=5	654	Name	0	2147483647	15	306	306	Value	1	2147483647	15	137	137	Activity	2	2147483647	15	60	60	Direction	3	2147483647	15	72	72	VIO	4	2147483647	15	79	79			1	6	1	Name	Value	Activity	Direction	VIO"/>
+  </ObjectList>
+  <probeset name="hw project" active="false">
+    <probe type="vio_input" busType="bus" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value="0.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|1.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|2.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|3.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|4.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|5.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|6.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|7.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|8.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|9.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|10.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|11.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|12.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|13.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|14.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|15.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|16.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|17.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|18.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|19.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|20.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|21.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|22.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|23.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|24.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|25.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|26.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|27.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|28.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|29.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|30.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|31.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;"/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="HEX"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="sistema_i/cont_config_0_cont_o[31]"/>
+        <net name="sistema_i/cont_config_0_cont_o[30]"/>
+        <net name="sistema_i/cont_config_0_cont_o[29]"/>
+        <net name="sistema_i/cont_config_0_cont_o[28]"/>
+        <net name="sistema_i/cont_config_0_cont_o[27]"/>
+        <net name="sistema_i/cont_config_0_cont_o[26]"/>
+        <net name="sistema_i/cont_config_0_cont_o[25]"/>
+        <net name="sistema_i/cont_config_0_cont_o[24]"/>
+        <net name="sistema_i/cont_config_0_cont_o[23]"/>
+        <net name="sistema_i/cont_config_0_cont_o[22]"/>
+        <net name="sistema_i/cont_config_0_cont_o[21]"/>
+        <net name="sistema_i/cont_config_0_cont_o[20]"/>
+        <net name="sistema_i/cont_config_0_cont_o[19]"/>
+        <net name="sistema_i/cont_config_0_cont_o[18]"/>
+        <net name="sistema_i/cont_config_0_cont_o[17]"/>
+        <net name="sistema_i/cont_config_0_cont_o[16]"/>
+        <net name="sistema_i/cont_config_0_cont_o[15]"/>
+        <net name="sistema_i/cont_config_0_cont_o[14]"/>
+        <net name="sistema_i/cont_config_0_cont_o[13]"/>
+        <net name="sistema_i/cont_config_0_cont_o[12]"/>
+        <net name="sistema_i/cont_config_0_cont_o[11]"/>
+        <net name="sistema_i/cont_config_0_cont_o[10]"/>
+        <net name="sistema_i/cont_config_0_cont_o[9]"/>
+        <net name="sistema_i/cont_config_0_cont_o[8]"/>
+        <net name="sistema_i/cont_config_0_cont_o[7]"/>
+        <net name="sistema_i/cont_config_0_cont_o[6]"/>
+        <net name="sistema_i/cont_config_0_cont_o[5]"/>
+        <net name="sistema_i/cont_config_0_cont_o[4]"/>
+        <net name="sistema_i/cont_config_0_cont_o[3]"/>
+        <net name="sistema_i/cont_config_0_cont_o[2]"/>
+        <net name="sistema_i/cont_config_0_cont_o[1]"/>
+        <net name="sistema_i/cont_config_0_cont_o[0]"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="sistema_i/cont_config_0_desborde_o"/>
+      </nets>
+    </probe>
+  </probeset>
 </hwsession>

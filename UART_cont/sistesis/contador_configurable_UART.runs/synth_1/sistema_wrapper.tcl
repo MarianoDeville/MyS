@@ -42,6 +42,9 @@ set_property used_in_implementation false [get_files -all e:/Facultad/MyS/UART_c
 set_property used_in_implementation false [get_files -all e:/Facultad/MyS/UART_cont/sistesis/contador_configurable_UART.srcs/sources_1/bd/sistema/ip/sistema_vio_0_0/sistema_vio_0_0.xdc]
 set_property used_in_implementation false [get_files -all e:/Facultad/MyS/UART_cont/sistesis/contador_configurable_UART.srcs/sources_1/bd/sistema/ip/sistema_vio_0_0/sistema_vio_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all e:/Facultad/MyS/UART_cont/sistesis/contador_configurable_UART.srcs/sources_1/bd/sistema/ip/sistema_auto_pc_0/sistema_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all e:/Facultad/MyS/UART_cont/sistesis/contador_configurable_UART.srcs/sources_1/bd/sistema/ip/sistema_clk_wiz_1/sistema_clk_wiz_1_board.xdc]
+set_property used_in_implementation false [get_files -all e:/Facultad/MyS/UART_cont/sistesis/contador_configurable_UART.srcs/sources_1/bd/sistema/ip/sistema_clk_wiz_1/sistema_clk_wiz_1.xdc]
+set_property used_in_implementation false [get_files -all e:/Facultad/MyS/UART_cont/sistesis/contador_configurable_UART.srcs/sources_1/bd/sistema/ip/sistema_clk_wiz_1/sistema_clk_wiz_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all E:/Facultad/MyS/UART_cont/sistesis/contador_configurable_UART.srcs/sources_1/bd/sistema/sistema_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being

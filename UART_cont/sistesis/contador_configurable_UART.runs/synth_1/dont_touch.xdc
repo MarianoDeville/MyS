@@ -16,10 +16,13 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==sistema_rst_ps7
 # IP: bd/sistema/ip/sistema_vio_0_0/sistema_vio_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==sistema_vio_0_0 || ORIG_REF_NAME==sistema_vio_0_0} -quiet] -quiet
 
+# IP: bd/sistema/ip/sistema_cont_config_0_1/sistema_cont_config_0_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==sistema_cont_config_0_1 || ORIG_REF_NAME==sistema_cont_config_0_1} -quiet] -quiet
+
 # IP: bd/sistema/ip/sistema_auto_pc_0/sistema_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==sistema_auto_pc_0 || ORIG_REF_NAME==sistema_auto_pc_0} -quiet] -quiet
 
-# IP: bd/sistema/ip/sistema_cont_config_0_1/sistema_cont_config_0_1.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==sistema_cont_config_0_1 || ORIG_REF_NAME==sistema_cont_config_0_1} -quiet] -quiet
+# IP: bd/sistema/ip/sistema_clk_wiz_1/sistema_clk_wiz_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==sistema_clk_wiz_1 || ORIG_REF_NAME==sistema_clk_wiz_1} -quiet] -quiet
 
 # XDC: bd/sistema/sistema_ooc.xdc
