@@ -20,11 +20,11 @@
     </Object>
   </ObjectList>
   <ObjectList object_type="hw_probe" gui_info="">
-    <Object name="sistema_i/cont_config_0_cont_o[31:0]" gui_info="hw_vios/hw_vio_1=0"/>
-    <Object name="sistema_i/cont_config_0_desborde_o" gui_info="hw_vios/hw_vio_1=1"/>
+    <Object name="sistema_i/cont_config_0_cont_o[31:0]" gui_info="hw_vios/hw_vio_1=1"/>
+    <Object name="sistema_i/cont_config_0_desborde_o" gui_info="hw_vios/hw_vio_1=0"/>
   </ObjectList>
   <ObjectList object_type="hw_vio" gui_info="">
-    <Object name="hw_vio_1" gui_info="hw_vios/hw_vio_1/TablePreference=5	654	Name	0	2147483647	15	306	306	Value	1	2147483647	15	137	137	Activity	2	2147483647	15	60	60	Direction	3	2147483647	15	72	72	VIO	4	2147483647	15	79	79			1	6	1	Name	Value	Activity	Direction	VIO"/>
+    <Object name="hw_vio_1" gui_info="hw_vios/hw_vio_1/TablePreference=5	623	Name	0	2147483647	15	240	240	Value	1	2147483647	15	172	172	Activity	2	2147483647	15	60	60	Direction	3	2147483647	15	72	72	VIO	4	2147483647	15	79	79			1	6	1	Name	Value	Activity	Direction	VIO"/>
   </ObjectList>
   <probeset name="hw project" active="false">
     <probe type="vio_input" busType="bus" source="netlist" spec="VIO_INPUT_V2_RT">
@@ -35,7 +35,7 @@
         <Option Id="HW_VIO" value="hw_vio_1"/>
         <Option Id="INPUT_VALUE_RADIX" value="HEX"/>
         <Option Id="NAME.CUSTOM" value=""/>
-        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="NAME.SELECT" value="Short"/>
         <Option Id="SOURCE" value="netlist"/>
       </probeOptions>
       <nets>
@@ -76,12 +76,12 @@
     <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
       <probeOptions Id="DebugProbeParams">
         <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
-        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_HINT" value="InputDisplay:LED;LED_Low:128,128,128,;LED_High:255,0,0,;"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_VIO" value="hw_vio_1"/>
         <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
         <Option Id="NAME.CUSTOM" value=""/>
-        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="NAME.SELECT" value="Short"/>
         <Option Id="SOURCE" value="netlist"/>
       </probeOptions>
       <nets>

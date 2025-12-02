@@ -68,13 +68,17 @@ vcom -work proc_sys_reset_v5_0_13 -93 \
 vcom -work xil_defaultlib -93 \
 "../../../bd/sistema/ip/sistema_rst_ps7_0_100M_0/sim/sistema_rst_ps7_0_100M_0.vhd" \
 "../../../bd/sistema/ip/sistema_vio_0_0/sim/sistema_vio_0_0.vhd" \
-"../../../bd/sistema/ipshared/d24b/src/contNb.vhd" \
-"../../../bd/sistema/ipshared/d24b/src/genEnaNb.vhd" \
-"../../../bd/sistema/ipshared/d24b/src/contNb_top.vhd" \
-"../../../bd/sistema/ipshared/d24b/hdl/cont_config_v1_0_S00_AXI.vhd" \
-"../../../bd/sistema/ipshared/d24b/hdl/cont_config_v1_0.vhd" \
+"../../../bd/sistema/ipshared/3632/src/contNb.vhd" \
+"../../../bd/sistema/ipshared/3632/src/genEnaNb.vhd" \
+"../../../bd/sistema/ipshared/3632/src/contNb_top.vhd" \
+"../../../bd/sistema/ipshared/3632/hdl/cont_config_v1_0_S00_AXI.vhd" \
+"../../../bd/sistema/ipshared/3632/hdl/cont_config_v1_0.vhd" \
 "../../../bd/sistema/ip/sistema_cont_config_0_1/sim/sistema_cont_config_0_1.vhd" \
 "../../../bd/sistema/sim/sistema.vhd" \
+
+vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../contador_configurable_UART.srcs/sources_1/bd/sistema/ipshared/ec67/hdl" "+incdir+../../../../contador_configurable_UART.srcs/sources_1/bd/sistema/ipshared/70cf/hdl" "+incdir+../../../../contador_configurable_UART.srcs/sources_1/bd/sistema/ipshared/85a3" "+incdir+../../../../contador_configurable_UART.srcs/sources_1/bd/sistema/ip/sistema_processing_system7_0_0" "+incdir+../../../../contador_configurable_UART.srcs/sources_1/bd/sistema/ipshared/1b7e/hdl/verilog" "+incdir+../../../../contador_configurable_UART.srcs/sources_1/bd/sistema/ipshared/122e/hdl/verilog" "+incdir+../../../../contador_configurable_UART.srcs/sources_1/bd/sistema/ipshared/46fd/hdl" "+incdir+C:/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \
+"../../../bd/sistema/ip/sistema_clk_wiz_1/sistema_clk_wiz_1_clk_wiz.v" \
+"../../../bd/sistema/ip/sistema_clk_wiz_1/sistema_clk_wiz_1.v" \
 
 vlog -work generic_baseblocks_v2_1_0  -v2k5 "+incdir+../../../../contador_configurable_UART.srcs/sources_1/bd/sistema/ipshared/ec67/hdl" "+incdir+../../../../contador_configurable_UART.srcs/sources_1/bd/sistema/ipshared/70cf/hdl" "+incdir+../../../../contador_configurable_UART.srcs/sources_1/bd/sistema/ipshared/85a3" "+incdir+../../../../contador_configurable_UART.srcs/sources_1/bd/sistema/ip/sistema_processing_system7_0_0" "+incdir+../../../../contador_configurable_UART.srcs/sources_1/bd/sistema/ipshared/1b7e/hdl/verilog" "+incdir+../../../../contador_configurable_UART.srcs/sources_1/bd/sistema/ipshared/122e/hdl/verilog" "+incdir+../../../../contador_configurable_UART.srcs/sources_1/bd/sistema/ipshared/46fd/hdl" "+incdir+C:/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \
 "../../../../contador_configurable_UART.srcs/sources_1/bd/sistema/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v" \
@@ -99,8 +103,6 @@ vlog -work axi_protocol_converter_v2_1_18  -v2k5 "+incdir+../../../../contador_c
 
 vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../contador_configurable_UART.srcs/sources_1/bd/sistema/ipshared/ec67/hdl" "+incdir+../../../../contador_configurable_UART.srcs/sources_1/bd/sistema/ipshared/70cf/hdl" "+incdir+../../../../contador_configurable_UART.srcs/sources_1/bd/sistema/ipshared/85a3" "+incdir+../../../../contador_configurable_UART.srcs/sources_1/bd/sistema/ip/sistema_processing_system7_0_0" "+incdir+../../../../contador_configurable_UART.srcs/sources_1/bd/sistema/ipshared/1b7e/hdl/verilog" "+incdir+../../../../contador_configurable_UART.srcs/sources_1/bd/sistema/ipshared/122e/hdl/verilog" "+incdir+../../../../contador_configurable_UART.srcs/sources_1/bd/sistema/ipshared/46fd/hdl" "+incdir+C:/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \
 "../../../bd/sistema/ip/sistema_auto_pc_0/sim/sistema_auto_pc_0.v" \
-"../../../bd/sistema/ip/sistema_clk_wiz_1/sistema_clk_wiz_1_clk_wiz.v" \
-"../../../bd/sistema/ip/sistema_clk_wiz_1/sistema_clk_wiz_1.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

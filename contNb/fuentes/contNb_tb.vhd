@@ -25,8 +25,8 @@ begin
 	-- Parte descriptiva
 	clk_tb   	<= not clk_tb after 1 ns;
 	up_tb    	<= '1' after 30 ns;
-	rst_tb   	<= '0' after 1 ns, '1' after 40 ns;
-	value_tb 	<= x"0a" after 10 ns;
+	rst_tb   	<= '0' after 1 ns, '1' after 4 ns;
+	value_tb 	<= x"03" after 10 ns;
 	ld_tb		<= '1' after 12 ns, '0' after 14 ns;
 	clr_desb_tb <= '1' after 50 ns, '0' after 54 ns, '1' after 80 ns, '0' after 84 ns;
 	

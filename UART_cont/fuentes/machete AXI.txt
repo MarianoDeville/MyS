@@ -32,10 +32,15 @@ component contNb_top is
 		ena_i      => slv_reg0(0),
 		set_clk_i  => slv_reg0(1),		
 		set_cont_i => slv_reg0(2),		
-		up_i       => slv_reg0(4),
-		clr_i      => slv_reg0(5),
+		up_i       => slv_reg0(3),
+		clr_i      => slv_reg0(4),
 		word_i     => slv_reg1,
 		
-		desborde_o => desborde_o,
-		data_o     => slv_reg2
+		desborde_o => slv_aux0(0),
+		data_o     => slv_aux1
 	);
+	
+	desborde_o <= slv_aux0(0);
+	cont_o     <= slv_aux1;
+
+

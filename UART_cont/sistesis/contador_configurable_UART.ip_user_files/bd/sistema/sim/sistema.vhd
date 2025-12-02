@@ -1,7 +1,7 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
---Date        : Mon Dec  1 03:28:56 2025
+--Date        : Tue Dec  2 17:49:48 2025
 --Host        : desarrollo running 64-bit major release  (build 9200)
 --Command     : generate_target sistema.bd
 --Design      : sistema
@@ -614,7 +614,7 @@ entity sistema is
     sys_clock : in STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of sistema : entity is "sistema,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=sistema,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=8,numReposBlks=6,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=2,da_board_cnt=4,da_clkrst_cnt=4,da_ps7_cnt=1,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of sistema : entity is "sistema,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=sistema,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=8,numReposBlks=6,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=2,da_board_cnt=4,da_clkrst_cnt=4,da_ps7_cnt=1,synth_mode=Global}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of sistema : entity is "sistema.hwdef";
 end sistema;
@@ -707,6 +707,12 @@ architecture STRUCTURE of sistema is
     probe_in1 : in STD_LOGIC_VECTOR ( 31 downto 0 )
   );
   end component sistema_vio_0_0;
+  component sistema_clk_wiz_1 is
+  port (
+    clk_in1 : in STD_LOGIC;
+    clk_out1 : out STD_LOGIC
+  );
+  end component sistema_clk_wiz_1;
   component sistema_cont_config_0_1 is
   port (
     desborde_o : out STD_LOGIC;
@@ -734,12 +740,6 @@ architecture STRUCTURE of sistema is
     s00_axi_aresetn : in STD_LOGIC
   );
   end component sistema_cont_config_0_1;
-  component sistema_clk_wiz_1 is
-  port (
-    clk_in1 : in STD_LOGIC;
-    clk_out1 : out STD_LOGIC
-  );
-  end component sistema_clk_wiz_1;
   signal clk_wiz_clk_out1 : STD_LOGIC;
   signal cont_config_0_cont_o : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal cont_config_0_desborde_o : STD_LOGIC;

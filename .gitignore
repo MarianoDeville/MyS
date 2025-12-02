@@ -662,3 +662,5 @@ UART_cont/sistesis/contador_configurable_UART.sdk/webtalk/sdk_webtalk.wdm
 UART_cont/sistesis/contador_configurable_UART.sdk/webtalk/usage_statistics_ext_sdk.html
 UART_cont/sistesis/contador_configurable_UART.sdk/webtalk/usage_statistics_ext_sdk.xml
 UART_cont/sistesis/contador_configurable_UART.sdk/webtalk/webtalk.jou
+*.wdf
+*.xml

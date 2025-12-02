@@ -4,7 +4,7 @@
       "boundary_crc": "0xD7C204A4FE4C062B",
       "device": "xc7z010clg400-1",
       "name": "sistema",
-      "synth_flow_mode": "Hierarchical",
+      "synth_flow_mode": "None",
       "tool_version": "2018.3",
       "validated": "true"
     },
@@ -17,8 +17,8 @@
       },
       "rst_ps7_0_100M": "",
       "vio_0": "",
-      "cont_config": "",
-      "clk_wiz": ""
+      "clk_wiz": "",
+      "cont_config": ""
     },
     "interface_ports": {
       "DDR": {
@@ -1365,10 +1365,6 @@
           }
         }
       },
-      "cont_config": {
-        "vlnv": "xilinx.com:user:cont_config:1.0",
-        "xci_name": "sistema_cont_config_0_1"
-      },
       "clk_wiz": {
         "vlnv": "xilinx.com:ip:clk_wiz:6.0",
         "xci_name": "sistema_clk_wiz_1",
@@ -1413,9 +1409,19 @@
             "value": "false"
           }
         }
+      },
+      "cont_config": {
+        "vlnv": "xilinx.com:user:cont_config:1.0",
+        "xci_name": "sistema_cont_config_0_1"
       }
     },
     "interface_nets": {
+      "processing_system7_0_DDR": {
+        "interface_ports": [
+          "DDR",
+          "processing_system7_0/DDR"
+        ]
+      },
       "ps7_0_axi_periph_M00_AXI": {
         "interface_ports": [
           "ps7_0_axi_periph/M00_AXI",
@@ -1426,12 +1432,6 @@
         "interface_ports": [
           "FIXED_IO",
           "processing_system7_0/FIXED_IO"
-        ]
-      },
-      "processing_system7_0_DDR": {
-        "interface_ports": [
-          "DDR",
-          "processing_system7_0/DDR"
         ]
       },
       "processing_system7_0_M_AXI_GP0": {

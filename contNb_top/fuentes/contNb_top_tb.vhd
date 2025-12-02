@@ -35,7 +35,8 @@ begin
 	word_tb <= x"02" after 4 ns, x"0a" after 14 ns;
 	set_clk_tb  <= '1' after 5 ns, '0' after 7 ns;
 	set_cont_tb  <= '1' after 15 ns, '0' after 17 ns;
-	clr_tb  <= '1' after 21 ns, '0' after 23 ns;
+	clr_tb  <= '1' after 21 ns, '0' after 23 ns,
+			   '1' after 64 ns, '0' after 66 ns;
 	
 	contNb_top_inst: entity work.contNb_top
 		generic map(

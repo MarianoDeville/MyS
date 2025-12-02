@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="36">
   <CompositeFile CompositeFileTopName="sistema" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1764570537"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1764570537"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1764570537"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1764570537"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1764708596"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1764708596"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1764708596"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1764708596"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\sistema_processing_system7_0_0\sistema_processing_system7_0_0.xci" Type="IP">
         <Instance HierarchyPath="processing_system7_0"/>
@@ -57,16 +57,16 @@
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\sistema_auto_pc_0\sistema_auto_pc_0.xci" Type="IP">
-        <Instance HierarchyPath="ps7_0_axi_periph/s00_couplers/auto_pc"/>
+      <File Name="ip\sistema_clk_wiz_1\sistema_clk_wiz_1.xci" Type="IP">
+        <Instance HierarchyPath="clk_wiz"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip\sistema_clk_wiz_1\sistema_clk_wiz_1.xci" Type="IP">
-        <Instance HierarchyPath="clk_wiz"/>
+      <File Name="ip\sistema_auto_pc_0\sistema_auto_pc_0.xci" Type="IP">
+        <Instance HierarchyPath="ps7_0_axi_periph/s00_couplers/auto_pc"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

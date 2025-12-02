@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Mon Dec  1 03:49:12 2025
+| Date             : Tue Dec  2 17:51:43 2025
 | Host             : desarrollo running 64-bit major release  (build 9200)
 | Command          : report_power -file sistema_wrapper_power_routed.rpt -pb sistema_wrapper_power_summary_routed.pb -rpx sistema_wrapper_power_routed.rpx
 | Design           : sistema_wrapper
@@ -33,7 +33,7 @@ Table of Contents
 | Total On-Chip Power (W)  | 1.485        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.372        |
+| Dynamic (W)              | 1.371        |
 | Device Static (W)        | 0.113        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 67.9         |
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.008 |        7 |       --- |             --- |
-| Slice Logic              |     0.002 |     3586 |       --- |             --- |
-|   LUT as Logic           |     0.001 |     1141 |     17600 |            6.48 |
+| Slice Logic              |     0.002 |     3576 |       --- |             --- |
+|   LUT as Logic           |     0.002 |     1155 |     17600 |            6.56 |
 |   CARRY4                 |    <0.001 |       56 |      4400 |            1.27 |
-|   Register               |    <0.001 |     1810 |     35200 |            5.14 |
+|   Register               |    <0.001 |     1809 |     35200 |            5.14 |
 |   LUT as Distributed RAM |    <0.001 |       24 |      6000 |            0.40 |
 |   LUT as Shift Register  |    <0.001 |       60 |      6000 |            1.00 |
 |   F7/F8 Muxes            |    <0.001 |        3 |     17600 |            0.02 |
-|   Others                 |     0.000 |      292 |       --- |             --- |
-| Signals                  |     0.002 |     2564 |       --- |             --- |
+|   Others                 |     0.000 |      290 |       --- |             --- |
+| Signals                  |     0.002 |     2558 |       --- |             --- |
 | MMCM                     |     0.106 |        1 |         2 |           50.00 |
 | I/O                      |    <0.001 |        1 |       100 |            1.00 |
 | PS7                      |     1.253 |        1 |       --- |             --- |
@@ -76,7 +76,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.019 |       0.013 |      0.006 |
+| Vccint    |       1.000 |     0.019 |       0.012 |      0.006 |
 | Vccaux    |       1.800 |     0.066 |       0.059 |      0.008 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -156,7 +156,7 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| sistema_wrapper          |     1.372 |
+| sistema_wrapper          |     1.371 |
 |   dbg_hub                |     0.003 |
 |     inst                 |     0.003 |
 |       BSCANID.u_xsdbm_id |     0.003 |
