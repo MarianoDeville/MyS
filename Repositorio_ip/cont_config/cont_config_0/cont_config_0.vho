@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:cont_config:1.0
--- IP Revision: 11
+-- IP Revision: 15
 
 -- The following code must appear in the VHDL architecture header.
 

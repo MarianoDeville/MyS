@@ -24,7 +24,7 @@
     <Object name="sistema_i/cont_config_0_desborde_o" gui_info="hw_vios/hw_vio_1=0"/>
   </ObjectList>
   <ObjectList object_type="hw_vio" gui_info="">
-    <Object name="hw_vio_1" gui_info="hw_vios/hw_vio_1/TablePreference=5	623	Name	0	2147483647	15	240	240	Value	1	2147483647	15	172	172	Activity	2	2147483647	15	60	60	Direction	3	2147483647	15	72	72	VIO	4	2147483647	15	79	79			1	6	1	Name	Value	Activity	Direction	VIO"/>
+    <Object name="hw_vio_1" gui_info="hw_vios/hw_vio_1/TablePreference=5	605	Name	0	2147483647	15	240	240	Value	1	2147483647	15	154	154	Activity	2	2147483647	15	60	60	Direction	3	2147483647	15	72	72	VIO	4	2147483647	15	79	79			1	6	1	Name	Value	Activity	Direction	VIO"/>
   </ObjectList>
   <probeset name="hw project" active="false">
     <probe type="vio_input" busType="bus" source="netlist" spec="VIO_INPUT_V2_RT">
@@ -33,7 +33,7 @@
         <Option Id="DISPLAY_HINT" value="0.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|1.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|2.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|3.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|4.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|5.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|6.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|7.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|8.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|9.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|10.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|11.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|12.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|13.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|14.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|15.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|16.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|17.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|18.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|19.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|20.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|21.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|22.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|23.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|24.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|25.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|26.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|27.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|28.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|29.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|30.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;|31.InputDisplay:LED;LED_Low:128,128,128,;LED_High:0,255,0,;"/>
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_VIO" value="hw_vio_1"/>
-        <Option Id="INPUT_VALUE_RADIX" value="HEX"/>
+        <Option Id="INPUT_VALUE_RADIX" value="UNSIGNED"/>
         <Option Id="NAME.CUSTOM" value=""/>
         <Option Id="NAME.SELECT" value="Short"/>
         <Option Id="SOURCE" value="netlist"/>

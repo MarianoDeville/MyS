@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Dec  2 17:49:56 2025" VIVADOVERSION="2018.3">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Dec  2 20:10:51 2025" VIVADOVERSION="2018.3">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:arty-z7-10:part0:1.1" DEVICE="7z010" NAME="sistema" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -747,7 +747,7 @@
       </PORTS>
       <BUSINTERFACES/>
     </MODULE>
-    <MODULE COREREVISION="11" FULLNAME="/cont_config" HWVERSION="1.0" INSTANCE="cont_config" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="cont_config" VLNV="xilinx.com:user:cont_config:1.0">
+    <MODULE COREREVISION="15" FULLNAME="/cont_config" HWVERSION="1.0" INSTANCE="cont_config" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="cont_config" VLNV="xilinx.com:user:cont_config:1.0">
       <DOCUMENTS/>
       <ADDRESSBLOCKS>
         <ADDRESSBLOCK ACCESS="" INTERFACE="S00_AXI" NAME="S00_AXI_reg" RANGE="4096" USAGE="register"/>
@@ -2674,101 +2674,6 @@
             <CONNECTION INSTANCE="rst_ps7_0_100M" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M00_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="cont_config_s00_axi_awaddr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="cont_config" PORT="s00_axi_awaddr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="2" NAME="M00_AXI_awprot" RIGHT="0" SIGIS="undef" SIGNAME="cont_config_s00_axi_awprot">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="cont_config" PORT="s00_axi_awprot"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M00_AXI_awvalid" SIGIS="undef" SIGNAME="cont_config_s00_axi_awvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="cont_config" PORT="s00_axi_awvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M00_AXI_awready" SIGIS="undef" SIGNAME="cont_config_s00_axi_awready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="cont_config" PORT="s00_axi_awready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M00_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="cont_config_s00_axi_wdata">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="cont_config" PORT="s00_axi_wdata"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="3" NAME="M00_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="cont_config_s00_axi_wstrb">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="cont_config" PORT="s00_axi_wstrb"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M00_AXI_wvalid" SIGIS="undef" SIGNAME="cont_config_s00_axi_wvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="cont_config" PORT="s00_axi_wvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M00_AXI_wready" SIGIS="undef" SIGNAME="cont_config_s00_axi_wready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="cont_config" PORT="s00_axi_wready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M00_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="cont_config_s00_axi_bresp">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="cont_config" PORT="s00_axi_bresp"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M00_AXI_bvalid" SIGIS="undef" SIGNAME="cont_config_s00_axi_bvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="cont_config" PORT="s00_axi_bvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M00_AXI_bready" SIGIS="undef" SIGNAME="cont_config_s00_axi_bready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="cont_config" PORT="s00_axi_bready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M00_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="cont_config_s00_axi_araddr">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="cont_config" PORT="s00_axi_araddr"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="2" NAME="M00_AXI_arprot" RIGHT="0" SIGIS="undef" SIGNAME="cont_config_s00_axi_arprot">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="cont_config" PORT="s00_axi_arprot"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M00_AXI_arvalid" SIGIS="undef" SIGNAME="cont_config_s00_axi_arvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="cont_config" PORT="s00_axi_arvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M00_AXI_arready" SIGIS="undef" SIGNAME="cont_config_s00_axi_arready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="cont_config" PORT="s00_axi_arready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="31" NAME="M00_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="cont_config_s00_axi_rdata">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="cont_config" PORT="s00_axi_rdata"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" LEFT="1" NAME="M00_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="cont_config_s00_axi_rresp">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="cont_config" PORT="s00_axi_rresp"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="I" NAME="M00_AXI_rvalid" SIGIS="undef" SIGNAME="cont_config_s00_axi_rvalid">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="cont_config" PORT="s00_axi_rvalid"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="M00_AXI_rready" SIGIS="undef" SIGNAME="cont_config_s00_axi_rready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="cont_config" PORT="s00_axi_rready"/>
-          </CONNECTIONS>
-        </PORT>
         <PORT DIR="I" LEFT="11" NAME="S00_AXI_awid" RIGHT="0" SIGIS="undef" SIGNAME="processing_system7_0_M_AXI_GP0_AWID">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0" PORT="M_AXI_GP0_AWID"/>
@@ -2957,6 +2862,101 @@
         <PORT DIR="I" NAME="S00_AXI_rready" SIGIS="undef" SIGNAME="processing_system7_0_M_AXI_GP0_RREADY">
           <CONNECTIONS>
             <CONNECTION INSTANCE="processing_system7_0" PORT="M_AXI_GP0_RREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M00_AXI_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="cont_config_s00_axi_awaddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cont_config" PORT="s00_axi_awaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="M00_AXI_awprot" RIGHT="0" SIGIS="undef" SIGNAME="cont_config_s00_axi_awprot">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cont_config" PORT="s00_axi_awprot"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M00_AXI_awvalid" SIGIS="undef" SIGNAME="cont_config_s00_axi_awvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cont_config" PORT="s00_axi_awvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M00_AXI_awready" SIGIS="undef" SIGNAME="cont_config_s00_axi_awready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cont_config" PORT="s00_axi_awready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M00_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="cont_config_s00_axi_wdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cont_config" PORT="s00_axi_wdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="M00_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="cont_config_s00_axi_wstrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cont_config" PORT="s00_axi_wstrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M00_AXI_wvalid" SIGIS="undef" SIGNAME="cont_config_s00_axi_wvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cont_config" PORT="s00_axi_wvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M00_AXI_wready" SIGIS="undef" SIGNAME="cont_config_s00_axi_wready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cont_config" PORT="s00_axi_wready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="M00_AXI_bresp" RIGHT="0" SIGIS="undef" SIGNAME="cont_config_s00_axi_bresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cont_config" PORT="s00_axi_bresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M00_AXI_bvalid" SIGIS="undef" SIGNAME="cont_config_s00_axi_bvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cont_config" PORT="s00_axi_bvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M00_AXI_bready" SIGIS="undef" SIGNAME="cont_config_s00_axi_bready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cont_config" PORT="s00_axi_bready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="M00_AXI_araddr" RIGHT="0" SIGIS="undef" SIGNAME="cont_config_s00_axi_araddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cont_config" PORT="s00_axi_araddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="M00_AXI_arprot" RIGHT="0" SIGIS="undef" SIGNAME="cont_config_s00_axi_arprot">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cont_config" PORT="s00_axi_arprot"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M00_AXI_arvalid" SIGIS="undef" SIGNAME="cont_config_s00_axi_arvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cont_config" PORT="s00_axi_arvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M00_AXI_arready" SIGIS="undef" SIGNAME="cont_config_s00_axi_arready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cont_config" PORT="s00_axi_arready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="M00_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="cont_config_s00_axi_rdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cont_config" PORT="s00_axi_rdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="M00_AXI_rresp" RIGHT="0" SIGIS="undef" SIGNAME="cont_config_s00_axi_rresp">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cont_config" PORT="s00_axi_rresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="M00_AXI_rvalid" SIGIS="undef" SIGNAME="cont_config_s00_axi_rvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cont_config" PORT="s00_axi_rvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="M00_AXI_rready" SIGIS="undef" SIGNAME="cont_config_s00_axi_rready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="cont_config" PORT="s00_axi_rready"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

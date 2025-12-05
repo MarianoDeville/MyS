@@ -8,6 +8,7 @@
 
 #include <stdio.h>
 #include <stdbool.h>
+#include <stdlib.h>
 #include <string.h>
 #include "xil_io.h"
 #include "xil_printf.h"
@@ -38,19 +39,32 @@ static void SetearOffset(uint32_t offset);
 static void ClearFlag(void);
 static void Prompt(void);
 static void PrintStart(void);
+static uint32_t HexToUint(uint8_t *str);
 
 int main() {
 
+	bool leido = false;
 	UART0Init(BAUDE_RATE_UART);
 	PrintStart();
 	SetearVelocidad(0x00ffffff);
 	SetearOffset(0x000000ff);
-	Prompt();
 
     while(1) {
 
     	if(EscuchoUART())
     		ProcesoMsg();
+    	if(CONT_CONFIG_mReadReg(XPAR_CONT_CONFIG_S00_AXI_BASEADDR,
+    							CONT_CONFIG_S00_AXI_SLV_REG2_OFFSET)) {
+    		if(!leido) {
+
+    			leido = true;
+    			UART0Puts("\r    contador desbordado" CRLF);
+    			Prompt();
+    		}
+    	} else {
+
+			leido = false;
+		}
     }
 }
 
@@ -81,6 +95,12 @@ static bool EscuchoUART(void) {
 
 static void ProcesoMsg(void) {
 
+	if(!strcmp("VALOR?", (char*)buffer)) {
+
+		PrintStart();
+		return;
+	}
+
     if(!strcmp("VALOR?", (char*)buffer)) {
 
     	uint32_t lectura = CONT_CONFIG_mReadReg(XPAR_CONT_CONFIG_S00_AXI_BASEADDR,
@@ -101,16 +121,22 @@ static void ProcesoMsg(void) {
 
     if(!strncmp("OFFSET:", (char*)buffer, 7)) {
 
+    	uint8_t valor_ascii[20] = {0};
+    	strncpy((char*)valor_ascii, (char*)&buffer[7], strlen((char*)buffer) - 7);
+    	uint32_t valor_u = HexToUint(valor_ascii);
+    	SetearOffset(valor_u);
     	UART0Puts("    valor seteado" CRLF);
-    	SetearOffset(0x00ffffff);					// Acá va el valor recibido por UART
     	Prompt();
     	return;
     }
 
-    if(!strncmp("VELOCIDAD:", (char*)buffer, 7)) {
+    if(!strncmp("VELOCIDAD:", (char*)buffer, 10)) {
 
+    	uint8_t valor_ascii[20] = {0};
+    	strncpy((char*)valor_ascii, (char*)&buffer[10], strlen((char*)buffer) - 10);
+    	uint32_t valor_u = HexToUint(valor_ascii);
+    	SetearVelocidad(valor_u);
     	UART0Puts("    valor seteado" CRLF);
-    	SetearVelocidad(0x00ffffff);				// Acá va el valor recibido por UART
     	Prompt();
     	return;
     }
@@ -210,6 +236,35 @@ static void PrintStart(void) {
     		  "* Microarquitecturas y Softcores CESE                        *" CRLF
 			  "* Trabajo practico final                                     *" CRLF
 			  "* Contador programable por UART con indicacion de desborde   *" CRLF
-			  "**************************************************************" CRLF CRLF);
+			  "**************************************************************" CRLF
+			  "* Listado de comandos:                                       *" CRLF
+			  "*                   COMENZAR - PARAR - CLEAR - SUBIR - BAJAR *" CRLF
+			  "*                   VALOR? - BANDERA? - OFFSET: - VELOCIDAD: *" CRLF
+			  "*------------------------------------------------------------*" CRLF CRLF);
+	Prompt();
 	return;
+}
+
+static uint32_t HexToUint(uint8_t *str) {
+
+    uint32_t valor = 0;
+
+    while(*str) {
+
+        valor <<= 4;
+
+        if(*str >= '0' && *str <= '9') {
+
+            valor |= (*str - '0');
+        }
+        else if(*str >= 'A' && *str <= 'F') {
+
+            valor |= (*str - 'A' + 10);
+        } else {
+
+            return 1;
+        }
+        str++;
+    }
+    return valor;
 }

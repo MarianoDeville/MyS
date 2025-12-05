@@ -4,7 +4,7 @@ K3
 cModel Technology
 Z0 dE:\Facultad\MyS\contNb\simulacion
 Econtnb
-Z1 w1764707611
+Z1 w1764716310
 Z2 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
 Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
 Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
@@ -16,7 +16,7 @@ L12
 VFMUVYa=N?b3K1E`RZYg?B2
 Z8 OV;C;10.1d;51
 32
-Z9 !s108 1764707625.494000
+Z9 !s108 1764716427.872000
 Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Facultad/MyS/contNb/fuentes/contNb.vhd|
 Z11 !s107 E:/Facultad/MyS/contNb/fuentes/contNb.vhd|
 Z12 o-work work -2002 -explicit -O0
@@ -30,7 +30,7 @@ R4
 Z14 DEx4 work 6 contnb 0 22 FMUVYa=N?b3K1E`RZYg?B2
 l41
 L31
-VjQL?JiXkaNU:N2Z>2z3]E2
+V<zaW=JmEcNOj`47kFJi`C3
 R8
 32
 R9
@@ -38,7 +38,7 @@ R10
 R11
 R12
 R13
-!s100 3X6AmUdM_<bQMN1H=TIDd2
+!s100 V0jD@mE6Q5KZ3KCLYaWK03
 !i10b 1
 Econtnb_tb
 Z15 w1764700696
@@ -54,7 +54,7 @@ VG`0>3=JC@8U_LK:?iX9H:2
 R8
 32
 !i10b 1
-Z18 !s108 1764707625.527000
+Z18 !s108 1764716427.922000
 Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|E:/Facultad/MyS/contNb/fuentes/contNb_tb.vhd|
 Z20 !s107 E:/Facultad/MyS/contNb/fuentes/contNb_tb.vhd|
 R12

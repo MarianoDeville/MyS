@@ -664,3 +664,5 @@ UART_cont/sistesis/contador_configurable_UART.sdk/webtalk/usage_statistics_ext_s
 UART_cont/sistesis/contador_configurable_UART.sdk/webtalk/webtalk.jou
 *.wdf
 *.xml
+Repositorio_ip/sum_ip/managed_ip_project/managed_ip_project.cache/wt/project.wpc
+Repositorio_ip/sum_ip/managed_ip_project/managed_ip_project.cache/wt/webtalk_pa.xml

@@ -68,11 +68,11 @@ vcom -work proc_sys_reset_v5_0_13 -93 \
 vcom -work xil_defaultlib -93 \
 "../../../bd/sistema/ip/sistema_rst_ps7_0_100M_0/sim/sistema_rst_ps7_0_100M_0.vhd" \
 "../../../bd/sistema/ip/sistema_vio_0_0/sim/sistema_vio_0_0.vhd" \
-"../../../bd/sistema/ipshared/3632/src/contNb.vhd" \
-"../../../bd/sistema/ipshared/3632/src/genEnaNb.vhd" \
-"../../../bd/sistema/ipshared/3632/src/contNb_top.vhd" \
-"../../../bd/sistema/ipshared/3632/hdl/cont_config_v1_0_S00_AXI.vhd" \
-"../../../bd/sistema/ipshared/3632/hdl/cont_config_v1_0.vhd" \
+"../../../bd/sistema/ipshared/82b7/src/contNb.vhd" \
+"../../../bd/sistema/ipshared/82b7/src/genEnaNb.vhd" \
+"../../../bd/sistema/ipshared/82b7/src/contNb_top.vhd" \
+"../../../bd/sistema/ipshared/82b7/hdl/cont_config_v1_0_S00_AXI.vhd" \
+"../../../bd/sistema/ipshared/82b7/hdl/cont_config_v1_0.vhd" \
 "../../../bd/sistema/ip/sistema_cont_config_0_1/sim/sistema_cont_config_0_1.vhd" \
 "../../../bd/sistema/sim/sistema.vhd" \
 

@@ -44,34 +44,31 @@ begin
     begin
         if rising_edge(clk_cont) then
 
-            -- Reset síncrono
             if rst_cont = '0' then
                 estadoActual <= ZERO_N;
                 preset       <= ZERO_N;
                 desborde     <= '0';
 
-            -- Carga del preset (alta prioridad)
             elsif ld_cont = '1' then
                 preset       <= unsigned(value_i);
                 estadoActual <= ZERO_N;
                 desborde     <= '0';
 
             else
-                -- Avanza el estado
                 estadoActual <= estadoSiguiente;
 
-                -- Control de desborde
                 if clr_desb = '1' then
                     desborde <= '0';
 
-                elsif up_cont = '1' and estadoActual = preset then
-                    -- Overflow en incremento
-                    desborde <= '1';
+				elsif ena_cont = '1' then
+				
+					if up_cont = '1' and estadoActual = preset then
+						desborde <= '1';
 
-                elsif up_cont = '0' and estadoActual = ZERO_N then
-                    -- Underflow en decremento
-                    desborde <= '1';
-                end if;
+					elsif up_cont = '0' and estadoActual = ZERO_N then
+						desborde <= '1';
+					end if;
+				end if;
             end if;
         end if;
     end process;
@@ -83,7 +80,6 @@ begin
 
         if ena_cont = '1' then
 
-            -- Modo UP
             if up_cont = '1' then
                 if estadoActual = preset then
                     estadoSiguiente <= ZERO_N;
@@ -91,7 +87,6 @@ begin
                     estadoSiguiente <= estadoActual + 1;
                 end if;
 
-            -- Modo DOWN
             else
                 if estadoActual = ZERO_N then
                     estadoSiguiente <= preset;
@@ -99,7 +94,6 @@ begin
                     estadoSiguiente <= estadoActual - 1;
                 end if;
             end if;
-
         end if;
     end process;
 

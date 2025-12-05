@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Tue Dec  2 17:51:43 2025
+| Date             : Tue Dec  2 20:14:51 2025
 | Host             : desarrollo running 64-bit major release  (build 9200)
 | Command          : report_power -file sistema_wrapper_power_routed.rpt -pb sistema_wrapper_power_summary_routed.pb -rpx sistema_wrapper_power_routed.rpx
 | Design           : sistema_wrapper
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.008 |        7 |       --- |             --- |
-| Slice Logic              |     0.002 |     3576 |       --- |             --- |
-|   LUT as Logic           |     0.002 |     1155 |     17600 |            6.56 |
+| Slice Logic              |     0.002 |     3578 |       --- |             --- |
+|   LUT as Logic           |     0.002 |     1154 |     17600 |            6.56 |
 |   CARRY4                 |    <0.001 |       56 |      4400 |            1.27 |
 |   Register               |    <0.001 |     1809 |     35200 |            5.14 |
 |   LUT as Distributed RAM |    <0.001 |       24 |      6000 |            0.40 |
 |   LUT as Shift Register  |    <0.001 |       60 |      6000 |            1.00 |
 |   F7/F8 Muxes            |    <0.001 |        3 |     17600 |            0.02 |
 |   Others                 |     0.000 |      290 |       --- |             --- |
-| Signals                  |     0.002 |     2558 |       --- |             --- |
+| Signals                  |     0.002 |     2560 |       --- |             --- |
 | MMCM                     |     0.106 |        1 |         2 |           50.00 |
 | I/O                      |    <0.001 |        1 |       100 |            1.00 |
 | PS7                      |     1.253 |        1 |       --- |             --- |
@@ -167,8 +167,8 @@ Table of Contents
 |       U0                 |     0.002 |
 |     processing_system7_0 |     1.253 |
 |       inst               |     1.253 |
-|     ps7_0_axi_periph     |     0.004 |
-|       s00_couplers       |     0.004 |
+|     ps7_0_axi_periph     |     0.003 |
+|       s00_couplers       |     0.003 |
 |     vio_0                |     0.003 |
 |       inst               |     0.003 |
 +--------------------------+-----------+
