@@ -43,18 +43,19 @@ static uint32_t HexToUint(uint8_t *str);
 
 int main() {
 
-	bool leido = false;
-	UART0Init(BAUDE_RATE_UART);
-	PrintStart();
-	SetearVelocidad(0x00ffffff);
-	SetearOffset(0x000000ff);
+	bool leido = false;				// bandera para solo imprimir una vez el mensaje de contador desbordado
+	UART0Init(BAUDE_RATE_UART);		// inicializo el puerto UART a 115200
+	PrintStart();					// imprimo pantalla de comienzo
+	SetearVelocidad(0x00ffffff);	// seteo velocidad de cuenta lenta para que se aprecie la cuenta
+	SetearOffset(0x000000ff);		// seteo el valor de desborde
 
     while(1) {
 
-    	if(EscuchoUART())
+    	if(EscuchoUART())			// hay un retorno de carro en la entrada UART?
     		ProcesoMsg();
+
     	if(CONT_CONFIG_mReadReg(XPAR_CONT_CONFIG_S00_AXI_BASEADDR,
-    							CONT_CONFIG_S00_AXI_SLV_REG2_OFFSET)) {
+    							CONT_CONFIG_S00_AXI_SLV_REG2_OFFSET)) {	// el contador desbordó?
     		if(!leido) {
 
     			leido = true;
@@ -95,7 +96,7 @@ static bool EscuchoUART(void) {
 
 static void ProcesoMsg(void) {
 
-	if(!strcmp("VALOR?", (char*)buffer)) {
+	if(!strcmp("?", (char*)buffer)) {
 
 		PrintStart();
 		return;
